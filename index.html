@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <meta name="keywords" content="Vortex Detection, Computational Fluid Dynamics, Computer Vesion, Machine Learning, Software Engineering, Computational Engineering Design">
+    <meta name="description" content="Vortex Core Detection Using CMV, ML, AI, CED, SE.">
+    <title>Vortex Core Detection</title>
+</head>
+
+<body>
+<!-- navbar -->
+  <div class="topnav">  
+    <a href="assets/html/aboutus.html">About Us</a>
+    <a href="assets/html/ourteam.html">Our Team</a>
+    <a href="index.html">Vortex Core Detection</a>
+    <a href="assets/html/processed-sim.html" class="active">Processed Simulation</a>
+  </div>
+
+<!-- main body -->
+  <h1>Simulation Parameters:</h1>
+  <div class="row">
+    <div class="parameters">
+      <p id="param-CFD">The simulation selected:</p></br>
+      
+      <p id="param-CFD">Please select the simulation parameters:</p></br>
+      <form action="/cfd_parameters.py">
+          <label for="rotation-speed" style="color: #193441; font-weight: bold;">Rotation Speed:</label>
+          <div class="rs">
+            <input type="number" step="any" min="0" max="100" value="00.00" id="rotation-speed" name="rotation-speed">
+          </div>
+          
+          <label for="angle-of-attack" style="color: #193441; font-weight: bold;">Angle of Attack:</label>
+          <div class="aa">
+            <input type="number" step="any" min="0" max="100" value="00.00" id="angle-of-attack" name="angle-of-attack">
+          </div>
+          <p id="param-ML">Machine Learning Algorithm:</p></br>
+            <ul class="ml-algo">
+              <li style="color: #3e606f;">Yolo</li>
+              <li style="color: #3e606f;">Voting Classifier Ensemble</li>
+            </ul> 
+          <div class="btn-submit">
+            <input type="submit" value="Submit" id="btn">
+          </div>  
+      </form>
+    </div>
+    <div class="results-vis">
+      <img src="assets/images/realtime/vortexVis.png" alt="3Dvis">
+    </div>
+</div>
+
+
+<!--<script>
+  function myFunction() {
+    var x = document.getElementById("parameters");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>-->
+
+</body>
+</html>

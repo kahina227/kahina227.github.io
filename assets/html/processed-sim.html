@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="keywords" content="Vortex Detection, Computational Fluid Dynamics, Computer Vesion, Machine Learning, Software Engineering, Computational Engineering Design">
+    <meta name="description" content="Vortex Core Detection Using CMV, ML, AI, CED, SE.">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Processed Simulation</title>
+</head>
+
+<body>
+<!-- navbar -->
+  <div class="topnav">
+    <a href="aboutus.html">About Us</a>
+    <a href="ourteam.html">Our Team</a>
+    <a href="../../index.html">Vortex Core Detection</a>
+    <a href="processed-sim.html" class="active">Processed Simulation</a>
+  </div>
+
+<!-- main body -->
+<h1 style="color: #193441; margin-top: 30px; margin-left: 200px; margin-bottom: 2px;">
+    Simulation Details
+</h1>
+<div class="row">
+    <div class="simulation">
+            
+        <button id="processed-sim-btn" class="processed-simulation-btn">Simulation 1 </button>
+        <div class="simulation-info" id="param-sim-btn">
+            <div >
+                <span id="rotation-speed">Rotation Speed: <span id="rs-param-sim-btn">2350</span></br>
+                <span id="angel-of-attack">Angle of Attack: <span id="aa-param-sim-btn">0.00</span>
+            </div>
+            
+            <p id="processed-ML">Machine Learning Algorithm:</p></br>
+                <ul class="ml-alg">
+                    <li style="color: #3e606f;">Yolo</li>
+                    <li style="color: #3e606f;">Voting Classifier Ensemble</li>
+                </ul>    
+        </div>
+    </div>
+    <div  class="calculate_content_result">
+        <!--<div class="processed-result" id="imageID" style="display: none;">-->
+        <div class="processed-result" id="imageID" style="display: none;"></div>
+            <img src="../images/simulation1/res1.png" alt="3D-vortex-vis">
+            <img src="../images/simulation1/res2.png" alt="3D-vortex-vis" style="margin-left: 25px;">
+            <img src="../images/simulation1/res3.png" alt="3D-vortex-vis">
+            <img src="../images/simulation1/res4.png" alt="3D-vortex-vis" style="margin-left: 25px;">
+
+        </div>
+    </div>
+    
+</div>
+
+<script>
+    const btn = document.getElementById('processed-sim-btn');
+    btn.addEventListener('click', function onClick() {
+    btn.style.backgroundColor = '#a5b7c6';
+    btn.style.color = '#194144';
+});
+</script>
+
+<script>
+    function ShowAndHide() {
+        var x = document.getElementById('imageID');
+        if (x.style.display == 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+</script>
+<script>
+    function ShowChar() {
+        var x = document.getElementById('param-sim-btn');
+        if (x.style.display == 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+</script>
+
+<!--<script>
+    function showImage(){
+      document.getElementById("imageID").style.display = "block";
+    }
+    function hideImage(){
+      document.getElementById("imageID").style.display = "none";
+    }
+  </script>-->
+
+
+
+  <script type="text/javascript">
+    $(document).on('click','.click',function(){
+    $('.calculate_content_result').toggleClass('calculate_content_result_show');
+});
+
+var clickBtn = document.querySelector('.click');
+var result = document.querySelector('.calculate_content_result');
+clickBtn.addEventListerner('click',function(){
+   result.classList.toggle('calculate_content_result_show');
+});
+</script>
+
+</body>
+</html>

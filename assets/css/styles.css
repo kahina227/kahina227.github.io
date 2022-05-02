@@ -1,0 +1,20 @@
+/* import the sub-files of css */
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+  @import "modules/navbar.css";
+  @import "modules/aboutus.css";
+  @import "modules/ourteam.css";
+  @import "modules/parameters.css";
+  @import "modules/mainbody.css";
+  @import "modules/result-vis.css";
+  @import "modules/processed-sim.css";
+
+* {
+  font-family: Open Sans;
+  box-sizing: border-box;
+  margin:0;
+}
+
+
+
+
+

@@ -1,0 +1,16 @@
+/* style for the results visualisation */
+.results-vis {
+    float: left;
+    width: 500px;
+    height: 500px;
+    padding: 2px;
+   /* margin-right: 50px;*/
+  }
+
+  img {
+    margin-top: -1%;
+    margin-left: -1%;
+    height: 520px;
+    width: 600px;
+  }
+  
